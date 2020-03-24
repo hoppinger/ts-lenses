@@ -1,0 +1,23 @@
+{
+  "name": "ts-lenses",
+  "version": "0.9.0",
+  "description": "A statically typed lens library for TypeScript",
+  "main": "./out/app.js",
+  "scripts": {
+    "watch": "tsc --build --watch",
+    "go": "node ./out/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoppinger/ts-lenses.git"
+  },
+  "author": "Dr. Giuseppe Maggiore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoppinger/ts-lenses/issues"
+  },
+  "homepage": "https://github.com/hoppinger/ts-lenses#readme",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
