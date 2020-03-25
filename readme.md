@@ -39,6 +39,8 @@ In order to tackle this problem, I have built a simple lenses library that takes
 
 
 ## Simple example
+> In order to run this example, please first install the package via `npm install ts-lenses`, and add `import { Entity } from "ts-lenses"` to the top of your file!
+
 Consider a simple, shallow type such as\:
 
 ```ts
