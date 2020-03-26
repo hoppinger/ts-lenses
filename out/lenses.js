@@ -40,4 +40,7 @@ exports.InlineEntity = (fields) => ({
     eager: (key, f) => (Object.assign(Object.assign({}, fields), { [key]: f(fields[key]) })),
     lazy: (key, f) => exports.Entity(Object.assign(Object.assign({}, fields), { [key]: f(fields[key]) }))
 });
+exports.setter = function (k, v) {
+    return (s) => exports.Entity(s).inline.eager(k, _ => v);
+};
 //# sourceMappingURL=lenses.js.map

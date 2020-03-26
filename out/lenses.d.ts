@@ -33,5 +33,6 @@ export interface InlineEntity<fields extends Object> {
 export declare const Entity: <fields extends Object>(fields: fields) => Entity<fields>;
 export declare const NestedEntity: <fields extends Object>(fields: fields) => NestedEntity<fields>;
 export declare const InlineEntity: <fields extends Object>(fields: fields) => InlineEntity<fields>;
+export declare const setter: <fields extends Object, k extends keyof fields>(k: k, v: fields[k]) => (s: fields) => SetField<fields, k, fields[k]>;
 export {};
 //# sourceMappingURL=lenses.d.ts.map
