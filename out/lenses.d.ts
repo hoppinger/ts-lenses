@@ -34,5 +34,6 @@ export declare const Entity: <fields extends Object>(fields: fields) => Entity<f
 export declare const NestedEntity: <fields extends Object>(fields: fields) => NestedEntity<fields>;
 export declare const InlineEntity: <fields extends Object>(fields: fields) => InlineEntity<fields>;
 export declare const setter: <fields extends Object, k extends keyof fields>(k: k, v: fields[k]) => (s: fields) => SetField<fields, k, fields[k]>;
+export declare const Updater: <fields extends Object>() => <result>(f: Fun<Entity<fields>, result>) => Fun<fields, result>;
 export {};
 //# sourceMappingURL=lenses.d.ts.map
