@@ -82,3 +82,5 @@ export const InlineEntity = <fields extends Object>(fields:fields) : InlineEntit
 export const setter = <fields extends Object, k extends keyof fields>(k:k, v:fields[k]) =>
   (s:fields) => Entity<fields>(s).inline.eager<k, fields[k]>(k, _ => v)
 
+export const Updater = <fields extends Object>() => <result>(f:Fun<Entity<fields>, result>) : Fun<fields, result> => 
+  fields => f(Entity(fields))
